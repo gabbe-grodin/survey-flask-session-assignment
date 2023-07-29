@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		>
+		<title>Post Form</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{ url_for('static', filename='css/style.css') }}"
+		>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+		>
+	</head>
+	<body class="mt4 bg-dark-pink black-60 fs-normal">
+		<main
+			class="pb6 bg-washed-red bw3 mw7 center br2-ns ba b--black-10 pa4"
+		>
+			<h1 class="f1 i">Survey results</h1>
+			<h2 class="">
+				<span class="f5 black-40 b db mb2">
+					Name:
+				</span>
+				<span class="f9"> {{ name }} </span>
+			</h2>
+			<h2>
+				<span class="f5 black-40 b db mb2"> Dojo: </span
+				>{{ dojo }}
+			</h2>
+			<h2>
+				<span class="f5 black-40 b db mb2">
+					Rating out of 5: </span
+				>{{ score }}
+			</h2>
+			<h2>
+				<span class="f5 black-40 b db mb2">
+					Comments: </span
+				>{{ comment }}
+			</h2>
+			<h2>
+				<span class="f5 black-40 b db mb2">
+					Next up in their learning: </span
+				>{{ learnnext }}
+			</h2>
+		</main>
+	</body>
+</html>
